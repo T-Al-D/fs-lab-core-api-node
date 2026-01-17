@@ -18,7 +18,7 @@
     // export imports without issues
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "types": [],
+    "types": ["node"],
     // For nodejs:
     // "lib": ["esnext"],
     // "types": ["node"],
