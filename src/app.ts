@@ -1,7 +1,16 @@
 // HTTP Framework
-import express, { Request, Response } from "express";
+import express from "express";
+// cors = cross-origin-sharing -> safety in the browser
+import cors from "cors";
 
 export const app = express();
+
+// created automatic header
+app.use(
+  cors({
+    origin: "https://fs-lab-core-react.onrender.com",
+  }),
+);
 
 // routes with String parameters, response in JSON
 app.get("/", (_req, res) => {
@@ -11,6 +20,6 @@ app.get("/", (_req, res) => {
   });
 });
 
-app.get("/health", (_req: Request, res: Response) => {
+app.get("/health", (_req, res) => {
   res.json({ status: "ok" });
 });
