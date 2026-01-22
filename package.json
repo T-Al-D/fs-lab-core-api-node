@@ -33,12 +33,18 @@
     "typescript": "^5.9.3"
   },
   "compilerOptions": {
-    "types": [
-      "node",
-      "cors"
-    ]
+    "outDir": "dist",
+    "target": "ES2020",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": false
   },
   "engines": {
     "node": ">=20 <21"
-  }
+  },
+  "include": [
+    "src"
+  ]
 }
