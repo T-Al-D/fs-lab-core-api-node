@@ -23,6 +23,12 @@ and frontend integration testing:
 GET /health  
 Returns a simple status response.
 
+## CI / Testing
+
+This project uses GitHub Actions for Continuous Integration.
+Automated tests are not implemented yet; however, the CI pipeline
+is prepared and can be extended.
+
 ## Deployment
 
 The service is automatically built and deployed via Render (Web Service) on every push to `main`.
