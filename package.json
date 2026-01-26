@@ -22,10 +22,11 @@
   },
   "homepage": "https://github.com/T-Al-D/fs-lab-core-api-node#readme",
   "dependencies": {
-    "cors": "^2.8.6",
-    "express": "^5.2.1",
+    "@types/cors": "^2.8.19",
     "@types/express": "^5.0.6",
-    "@types/cors": "^2.8.19"
+    "cors": "^2.8.6",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1"
   },
   "devDependencies": {
     "@types/cors": "^2.8.19",

@@ -1,3 +1,4 @@
+import "dotenv/config"; // SET ENV : process.env.SERVICE_NAME
 import { app } from "./app";
 
 // define entry port
